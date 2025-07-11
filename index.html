@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=" width=device-width, initial-scale=1.0">
+    <title>Simulador de Juros Abusivos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f2f2f2; padding: 20px; }
+        .container { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; }
+        input, button { width: 100%; padding: 10px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background-color: #28a745; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #218838; }
+        .resultado { margin-top: 20px; font-weight: bold; white-space: pre-wrap; }
+        a.whatsapp { display: block; margin-top: 15px; text-align: center; background-color: #25D366; color: white; padding: 10px; border-radius: 5px; text-decoration: none; }
+        a.whatsapp:hover { background-color: #1ebe5d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Simulador de Juros Abusivos</h2>
+        <input type="number" id="anoContrato" placeholder="Ano do contrato (ex: 2022)">
+        <input type="number" id="entrada" placeholder="Valor de entrada (R$)">
+        <input type="number" id="valorTotal" placeholder="Valor financiado (R$)">
+        <input type="number" id="parcelas" placeholder="Número de parcelas">
+        <input type="number" id="valorParcela" placeholder="Valor de cada parcela (R$)">
+        <button onclick="calcular()">Analisar</button>
+        <div class="resultado" id="resultado"></div>
+        <a id="linkWhatsApp" class="whatsapp" style="display:none;" target="_blank">📲 Falar com o Especialista</a>
+    </div>
+    <script src="simulador.js"></script>
+</body>
+</html>
